@@ -12,6 +12,7 @@ Base = declarative_base()
 
 
 
+
 class Item(Base):
     __tablename__ = "items"
     
@@ -30,8 +31,18 @@ class User(Base):
     username = Column(String, nullable=False)
     password = Column(String, nullable=False)
     
+    # beyonce= User()
+    # beyonce.username = "bknowles"
+    # beyonce.password = "lemonade"
+    # session.add(beyonce)
+    # session.commit()
+    
+    
     print('users table created')
     
+#beyonce = User(username="bknowles", password="lemonade")
+
+
 class Bid(Base):
     __tablename__ = "bids"
     
