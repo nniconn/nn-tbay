@@ -31,16 +31,28 @@ class User(Base):
     username = Column(String, nullable=False)
     password = Column(String, nullable=False)
     
-    # beyonce= User()
-    # beyonce.username = "bknowles"
-    # beyonce.password = "lemonade"
-    # session.add(beyonce)
+
+
+#below code not working commented it out for now
+# def __init__(self, username, password):
+    # self.username = bknowles
+    # self.password = lemonade
+    
+    # def __repr__(self):
+        
+        
+# def __repr__(self):
+    # self.username = bknowles
+    # self.password = lemonade
+    # session.add(bknowles)
     # session.commit()
     
+        
+    # return "<User('%s', '%s')>" % (self.username, self.password)
     
-    print('users table created')
     
-#beyonce = User(username="bknowles", password="lemonade")
+print('users table created')
+    
 
 
 class Bid(Base):
@@ -56,3 +68,10 @@ class Bid(Base):
     
 
 Base.metadata.create_all(engine)
+
+
+beyonce = User()
+beyonce.username = "bknowles"
+beyonce.password = "lemonade"
+session.add(beyonce)
+session.commit()
