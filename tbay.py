@@ -75,3 +75,21 @@ beyonce.username = "bknowles"
 beyonce.password = "lemonade"
 session.add(beyonce)
 session.commit()
+
+hendrix = User()
+hendrix.username = "jhendrix"
+hendrix.password = "purple haze"
+session.add(hendrix)
+session.commit()
+
+guitar = Item()
+guitar.name = "Fender"
+guitar.description = "Black Fender Stratocaster 1969"
+session.add(guitar)
+session.commit()
+
+microphone = Item()
+microphone.name = "Shure"
+microphone.description = "Gold Shure Microphone"
+session.add(microphone)
+session.commit()
